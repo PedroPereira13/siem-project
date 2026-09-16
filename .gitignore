@@ -1,0 +1,35 @@
+# Dados persistentes (NÃO subir para o Git)
+volumes/
+*.log
+*.tmp
+
+# Ambiente
+.env
+.env.local
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+.pytest_cache/
+
+# Elasticsearch/Logstash
+config/logstash/data/
+config/logstash/logs/
