@@ -1,16 +1,16 @@
-# 🛡️ SIEM Project
+#  SIEM Project
 
 SIEM (Security Information and Event Management) construído do zero com Docker, Elastic Stack e Python.
 
-## 📋 Sobre
+##  Sobre
 
 Projeto educacional para aprender a construir um SIEM profissional, do zero ao avançado, sem uso de máquinas virtuais.
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 [Fontes de Logs] → [Logstash] → [Elasticsearch] → [Kibana]
 
-## 🚀 Tecnologias
+##  Tecnologias
 
 - Docker / Docker Compose
 - Elasticsearch 8.11.0
@@ -18,7 +18,7 @@ Projeto educacional para aprender a construir um SIEM profissional, do zero ao a
 - Logstash 8.11.0
 - Python (em breve)
 
-## 📁 Estrutura
+## Estrutura
 
 siem-project/
 ├── config/
@@ -32,7 +32,7 @@ siem-project/
 ├── LICENSE
 └── README.md
 
-## 🔧 Como Executar
+## Como Executar
 
 ### Passos
 
@@ -49,13 +49,13 @@ docker ps
 - Elasticsearch: http://localhost:9200
 - Logstash (TCP): localhost:5000
 
-## 🧪 Teste
+## Teste
 
 echo '{"message": "Failed password for admin from 192.168.1.100 port 22 ssh2"}' | nc localhost 5000
 
 Depois acesse o Kibana → Discover → data view logstash-logs-*
 
-## 📊 Progresso
+## Progresso
 
 - [x] Nível 1 — Fundamentos
 - [x] Nível 2 — MVP com Docker
@@ -67,10 +67,10 @@ Depois acesse o Kibana → Discover → data view logstash-logs-*
 - [ ] Nível 8 — Projeto Profissional
 - [ ] Nível 9 — Portfólio
 
-## 📄 Licença
+## Licença
 
 MIT — veja LICENSE.
 
-## 👤 Autor
+## Autor
 
 Pedro Antonio Ribeiro Pereira
