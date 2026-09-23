@@ -57,6 +57,18 @@ services:
       timeout: 10s
       retries: 5
 
+  correlation-engine:
+    build: ./correlation-engine
+    container_name: siem-correlation-engine
+    environment:
+      - ELASTICSEARCH_HOST=http://elasticsearch:9200
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    networks:
+      - siem-network
+    restart: unless-stopped
+
 networks:
   siem-network:
     driver: bridge
