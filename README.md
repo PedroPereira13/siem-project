@@ -1,13 +1,3 @@
-cd ~/Projetos/siem-project
-
-# ============================================================
-# 1. Abrir o README e colar a versão final (sem emojis + Nível 3)
-# ============================================================
-cat > README.md << 'EOF'
-# SIEM Project
-
-SIEM (Security Information and Event Management) construído do zero com Docker, Elastic Stack e Python.
-
 ## Sobre
 
 Projeto educacional para aprender a construir um SIEM profissional, do zero ao avançado, sem uso de máquinas virtuais.
@@ -156,20 +146,3 @@ MIT - veja LICENSE.
 
 Pedro Antonio Ribeiro Pereira
 EOF
-
-# ============================================================
-# 2. Verificar se não sobrou conflito
-# ============================================================
-echo "--- Verificando conflitos ---"
-grep -n "<<<<<<<\|=======\|>>>>>>>" README.md && echo "AINDA TEM CONFLITO!" || echo "OK - sem conflitos"
-
-# ============================================================
-# 3. Marcar como resolvido e continuar o rebase
-# ============================================================
-git add README.md
-git rebase --continue
-
-# ============================================================
-# 4. Push
-# ============================================================
-git push
